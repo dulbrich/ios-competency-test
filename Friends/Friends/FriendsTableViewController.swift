@@ -16,7 +16,7 @@ class FriendsTableViewController: UITableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getFriendsList()
+        network.getFriendsList(setFriendsList: setFriendsList)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -55,23 +55,11 @@ class FriendsTableViewController: UITableViewController{
         cell.friendImage.clipsToBounds = true
     }
     
-    func getFriendsList() {
-        let builder = Builder(base: URL(string: apiEndPoint)!)
-        let getRestaurants = builder.makeRequest(
-            method: .get,
-            endpoint: "friends",
-            args: (),
-            response: [Friends].self)
-        getRestaurants().enqueue { response in
-            switch response.interpreted {
-            case .success(let friendsList):
-                print("Got \(self.friends.count) friends!")
-                self.friends = friendsList
-                self.tableView.reloadData()
-            case .failure(let error):
-                print("Failed to get friends: \(error)")
-            }
-        }
+    
+    func setFriendsList(friendsList: [Friends]) {
+        print("Got \(self.friends.count) friends!")
+        self.friends = friendsList
+        self.tableView.reloadData()
     }
     
     

@@ -14,7 +14,6 @@ var friendId = 0
 
 class FriendViewController: UIViewController {
     
-    let apiEndPiont = "https://private-c1b9f-t2mobile.apiary-mock.com/friends/"
     
     @IBOutlet weak var friendFullName: UILabel!
     @IBOutlet weak var friendImage: UIImageView!
@@ -24,7 +23,7 @@ class FriendViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getFriend()
+        network.getFriend(setFriend: setFriend)
     }
     
     override func viewWillLayoutSubviews() {
@@ -32,29 +31,16 @@ class FriendViewController: UIViewController {
         
     }
     
-    func getFriend() {
-        let builder = Builder(base: URL(string: apiEndPiont)!)
-        let getRestaurants = builder.makeRequest(
-            method: .get,
-            endpoint: "\(friendId)",
-            args: (),
-            response: Friend.self)
-        getRestaurants().enqueue { response in
-            switch response.interpreted {
-            case .success(let friend):
-                self.friendFullName.text = "\(friend.first_name) \(friend.last_name)"
-                self.friendBio.text = friend.bio
-                self.friendPhone.text = friend.phone
-                if friend.available {
-                    self.friendAvailability.text = "AVAILALBE"
-                } else {
-                    self.friendAvailability.text = "NOT AVAILABLE"
-                }
-                self.getFriendImage(imageUrl: friend.img)
-            case .failure(let error):
-                print("Failed to get friend \(friendId): \(error)")
-            }
+    func setFriend(friend: Friend) {
+        self.friendFullName.text = "\(friend.first_name) \(friend.last_name)"
+        self.friendBio.text = friend.bio
+        self.friendPhone.text = friend.phone
+        if friend.available {
+            self.friendAvailability.text = "AVAILALBE"
+        } else {
+            self.friendAvailability.text = "NOT AVAILABLE"
         }
+        self.getFriendImage(imageUrl: friend.img)
     }
     
     func getFriendImage(imageUrl: String) {
