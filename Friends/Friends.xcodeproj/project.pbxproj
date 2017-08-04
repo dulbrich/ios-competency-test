@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A08C1EE1F3427F800C5DC50 /* Retrolux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A08C1ED1F3427F800C5DC50 /* Retrolux.framework */; };
+		1A08C1F21F342E5200C5DC50 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A08C1F11F342E5200C5DC50 /* Friend.swift */; };
+		1A08C1F41F34343B00C5DC50 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A08C1F31F34343B00C5DC50 /* FriendViewController.swift */; };
+		1A9D30AE1F34086F002D9111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D30AD1F34086F002D9111 /* AppDelegate.swift */; };
+		1A9D30B01F34086F002D9111 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D30AF1F34086F002D9111 /* FriendsTableViewController.swift */; };
+		1A9D30B31F34086F002D9111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D30B11F34086F002D9111 /* Main.storyboard */; };
+		1A9D30B61F34086F002D9111 /* Friends.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D30B41F34086F002D9111 /* Friends.xcdatamodeld */; };
+		1A9D30B81F34086F002D9111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D30B71F34086F002D9111 /* Assets.xcassets */; };
+		1A9D30BB1F34086F002D9111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9D30B91F34086F002D9111 /* LaunchScreen.storyboard */; };
+		1A9D30C51F341B78002D9111 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D30C41F341B78002D9111 /* FriendTableViewCell.swift */; };
+		1A9D30C71F3422EC002D9111 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9D30C61F3422EC002D9111 /* Friends.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A08C1ED1F3427F800C5DC50 /* Retrolux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Retrolux.framework; path = Carthage/Build/iOS/Retrolux.framework; sourceTree = "<group>"; };
+		1A08C1F11F342E5200C5DC50 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		1A08C1F31F34343B00C5DC50 /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		1A9D30AA1F34086F002D9111 /* Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9D30AD1F34086F002D9111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A9D30AF1F34086F002D9111 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		1A9D30B21F34086F002D9111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A9D30B51F34086F002D9111 /* Friends.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Friends.xcdatamodel; sourceTree = "<group>"; };
+		1A9D30B71F34086F002D9111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A9D30BA1F34086F002D9111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A9D30BC1F34086F002D9111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A9D30C41F341B78002D9111 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		1A9D30C61F3422EC002D9111 /* Friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A9D30A71F34086F002D9111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A08C1EE1F3427F800C5DC50 /* Retrolux.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A9D30A11F34086F002D9111 = {
+			isa = PBXGroup;
+			children = (
+				1A9D30AC1F34086F002D9111 /* Friends */,
+				1A9D30AB1F34086F002D9111 /* Products */,
+				1A9D30C81F342522002D9111 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A9D30AB1F34086F002D9111 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A9D30AA1F34086F002D9111 /* Friends.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A9D30AC1F34086F002D9111 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				1A9D30AD1F34086F002D9111 /* AppDelegate.swift */,
+				1A9D30AF1F34086F002D9111 /* FriendsTableViewController.swift */,
+				1A08C1F31F34343B00C5DC50 /* FriendViewController.swift */,
+				1A9D30C41F341B78002D9111 /* FriendTableViewCell.swift */,
+				1A9D30C61F3422EC002D9111 /* Friends.swift */,
+				1A08C1F11F342E5200C5DC50 /* Friend.swift */,
+				1A9D30B11F34086F002D9111 /* Main.storyboard */,
+				1A9D30B71F34086F002D9111 /* Assets.xcassets */,
+				1A9D30B91F34086F002D9111 /* LaunchScreen.storyboard */,
+				1A9D30BC1F34086F002D9111 /* Info.plist */,
+				1A9D30B41F34086F002D9111 /* Friends.xcdatamodeld */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		1A9D30C81F342522002D9111 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A08C1ED1F3427F800C5DC50 /* Retrolux.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A9D30A91F34086F002D9111 /* Friends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A9D30BF1F34086F002D9111 /* Build configuration list for PBXNativeTarget "Friends" */;
+			buildPhases = (
+				1A9D30A61F34086F002D9111 /* Sources */,
+				1A9D30A71F34086F002D9111 /* Frameworks */,
+				1A9D30A81F34086F002D9111 /* Resources */,
+				1A9D30CB1F34259D002D9111 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Friends;
+			productName = Friends;
+			productReference = 1A9D30AA1F34086F002D9111 /* Friends.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A9D30A21F34086F002D9111 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "David Ulbrich";
+				TargetAttributes = {
+					1A9D30A91F34086F002D9111 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZR6788V7YF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1A9D30A51F34086F002D9111 /* Build configuration list for PBXProject "Friends" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A9D30A11F34086F002D9111;
+			productRefGroup = 1A9D30AB1F34086F002D9111 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A9D30A91F34086F002D9111 /* Friends */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A9D30A81F34086F002D9111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9D30BB1F34086F002D9111 /* LaunchScreen.storyboard in Resources */,
+				1A9D30B81F34086F002D9111 /* Assets.xcassets in Resources */,
+				1A9D30B31F34086F002D9111 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A9D30CB1F34259D002D9111 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Retrolux.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A9D30A61F34086F002D9111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9D30B01F34086F002D9111 /* FriendsTableViewController.swift in Sources */,
+				1A08C1F21F342E5200C5DC50 /* Friend.swift in Sources */,
+				1A9D30B61F34086F002D9111 /* Friends.xcdatamodeld in Sources */,
+				1A9D30AE1F34086F002D9111 /* AppDelegate.swift in Sources */,
+				1A08C1F41F34343B00C5DC50 /* FriendViewController.swift in Sources */,
+				1A9D30C51F341B78002D9111 /* FriendTableViewCell.swift in Sources */,
+				1A9D30C71F3422EC002D9111 /* Friends.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A9D30B11F34086F002D9111 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A9D30B21F34086F002D9111 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A9D30B91F34086F002D9111 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A9D30BA1F34086F002D9111 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A9D30BD1F34086F002D9111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A9D30BE1F34086F002D9111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A9D30C01F34086F002D9111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZR6788V7YF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Friends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ulbrichpro.Friends;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1A9D30C11F34086F002D9111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZR6788V7YF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Friends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ulbrichpro.Friends;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A9D30A51F34086F002D9111 /* Build configuration list for PBXProject "Friends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A9D30BD1F34086F002D9111 /* Debug */,
+				1A9D30BE1F34086F002D9111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A9D30BF1F34086F002D9111 /* Build configuration list for PBXNativeTarget "Friends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A9D30C01F34086F002D9111 /* Debug */,
+				1A9D30C11F34086F002D9111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A9D30B41F34086F002D9111 /* Friends.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A9D30B51F34086F002D9111 /* Friends.xcdatamodel */,
+			);
+			currentVersion = 1A9D30B51F34086F002D9111 /* Friends.xcdatamodel */;
+			path = Friends.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1A9D30A21F34086F002D9111 /* Project object */;
+}
